@@ -2,53 +2,435 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Project Intraweb. Coming Soon!</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Intraweb</title>
+    <link rel="stylesheet" href="./material.css">
+    <script src="./material.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+    html, body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #F2F3F7;
+    }
+    #logo {
+      position: absolute;
+      min-width: 300px;
+      min-height: 60px;
+      left: 1%;
+      top: 1%;
+      background: #FFFFFF;
+      box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+      border-radius: 18px;
+      z-index: 2;
+    }
+    #image {
+      position: absolute;
+      max-width:100%;
+      max-height:100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .demo-card-widex.mdl-card {
+      position: relative;
+      top: 50px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      opacity: 0;
+    }
+    .demo-card-wide.mdl-card {
+      position: relative;
+      top: 100px;
+      border-radius: 4px;
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide1.mdl-card {
+      position: relative;
+      top: 150px;
+      max-width: 1000px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide2.mdl-card {
+      position: relative;
+      top: 200px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide3.mdl-card {
+      position: relative;
+      top: 250px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      background: #1B9DE2;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide4.mdl-card {
+      position: relative;
+      top: 300px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide5.mdl-card {
+      position: relative;
+      top: 350px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide6.mdl-card {
+      position: relative;
+      top: 400px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide7.mdl-card {
+      position: relative;
+      top: 450px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide8.mdl-card {
+      position: relative;
+      top: 500px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide9.mdl-card {
+      position: relative;
+      top: 550px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide10.mdl-card {
+      position: relative;
+      top: 600px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide11.mdl-card {
+      position: relative;
+      top: 650px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide12.mdl-card {
+      position: relative;
+      top: 700px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide90.mdl-card {
+      position: relative;
+      top: 750px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      opacity: 0;
+    }
+    .demo-card-wide1 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #1B9DE2;
+    }
+    .demo-card-wide2 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #1B9DE2;
+    }
+    .demo-card-wide3 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #1B9DE2;
+    }
+    .demo-card-wide4 > .mdl-card__title {
+      color: black;
+      height: 135px;
+      display: flex;
+      background: url('gitlab.png') center / cover;
+    }
+    .demo-card-wide5 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: url('phet.png') center / cover;
+    }
+    .demo-card-wide6 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: url('webmin.png') center / cover;
+    }
+    .demo-card-wide7 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: url('plex.png') center / cover;
+    }
+    .demo-card-wide8 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: url('nextcloud.png') center / cover;
+    }
+    .demo-card-wide9 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: url('rocketchat.png') center / cover;
+    }
+    .demo-card-wide10 > .mdl-card__title {
+      color: black;
+      height: 135px;
+      display: flex;
+      background: url('zimply.png') center / cover;
+    }
+    .demo-card-wide11 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #1B9DE2;
+    }
+    .demo-card-wide12 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #F48328;
+    }
+    .demo-card-wide > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      font-weight: bold;
+      background: #1B9DE2;
+    }
+    .demo-card-wide > .mdl-card__menu {
+      color: #fff;
+    }
+    #box{
+      opacity: 1.0;
+      height: 20%;
+      width: 100%;
+      bottom: 0px;
+    }
+    a {
+      text-decoration: none;
+      color:inherit;
+    }
+    </style>
   </head>
   <body>
-    <style media="screen">
-      #logo {
-        position: absolute;
-        min-width: 300px;
-        max-width: 900px;
-        min-height: 60px;
-        max-height: 180px;
-        left: 1%;
-        top: 1%;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 18px;
-      }
-
-      body {
-        background: #1B9DE2;
-      }
-      #image {
-        position: absolute;
-        max-width:100%;
-        max-height:100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      h1 {
-        position: absolute;
-        left: 5%;
-        top: 10%;
-        font-size: 80px;
-        width: 50%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        color: #FFFFFF;
-      }
-
-    </style>
-  </body>
-  <div id="logo">
-    <img id="image" src="intraweb.png" alt="logo">
+    <div id="logo">
+      <img id="image" src="intraweb.png" alt="logo">
+    </div>
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>Welcome to Project Intraweb</b></h2>
   </div>
-  <h1>
-    Making Information Accessible to all. <br> <br>Coming Soon.
-  </h1>
+  <div class="mdl-card__supporting-text">
+At Project Intraweb, we want everyone to have access to information, no matter if they are online or offline. Project Intraweb aims to deliver content to areas with little to no internet connectivity. <a href="https://github.com/Project-Intraweb/Intraweb">Click to view Project Intraweb on Github.</a>
+  </div>
+  <div class="mdl-card__menu">
+  </div>
+</div>
+<div class="demo-card-wide1 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>What is Project Intraweb?</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+A library of programs that run on a Raspberry Pi. These programs help empower schools, communities, and companies that work online and offline.
+  </div>
+</div>
+<div class="demo-card-wide2 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>How are these programs are accessed?</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+All of these programs can be accessed though a webpage, which can be accessed though a hotspot. The webpage is similiar to this one.
+  </div>
+</div>
+<div class="demo-card-wide3 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>What are the programs?</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+  </div>
+</div>
+<div class="demo-card-wide4 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">GitLab</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+Our offline version of Github. Create and clone repositories offline with Gitlab.
+  </div>
+</div>
+<div class="demo-card-wide5 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Phet</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+Offline simulations provided by Phet. <b>NOTE:</b> Not all simulations are provided. Only HTML5 simualtions are provided at this moment.  </div>
+</div>
+<div class="demo-card-wide6 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Webmin</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+Console for admin. Access is resticted to admins only. Monitor the Pi's resources with a dashbaord, plus control tasks and other stuff right from Webmin.  </div>
+</div>
+<div class="demo-card-wide7 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Plex</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+Download, watch, and share videos that you either own, or created. Plus, with internet connection, you can even watch movies for free.</div>
+</div>
+<div class="demo-card-wide8 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Nextcloud</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+An open source and private to store documents over the cloud.
+  </div>
+</div>
+<div class="demo-card-wide9 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">RocketChat</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+An open sourced and also awesome alternative to Slack. You can communicate to anyone in the Intraweb using RocketChat.
+  </div>
+</div>
+<div class="demo-card-wide10 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Zimply</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+Search and read Wikipedia and other forms of information offline. This version includes everything but pictures.
+  </div>
+</div>
+<a href="install.html">
+<div class="demo-card-wide11 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>Let's get started</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+Click on this card to find instructions on how to install Project Intraweb on your Raspberry Pi, or Debian based computer.
+  </div>
+</div>
+</a>
+<div class="demo-card-wide90 mdl-card mdl-shadow--2dp">
+</div>
+  </body>
 </html>

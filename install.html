@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Intraweb</title>
+    <link rel="stylesheet" href="./material.css">
+    <script src="./material.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+    html, body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #F2F3F7;
+    }
+    #logo {
+      position: absolute;
+      min-width: 300px;
+      min-height: 60px;
+      left: 1%;
+      top: 1%;
+      background: #FFFFFF;
+      box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+      border-radius: 18px;
+      z-index: 2;
+    }
+    #image {
+      position: absolute;
+      max-width:100%;
+      max-height:100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .demo-card-widex.mdl-card {
+      position: relative;
+      top: 50px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      opacity: 0;
+    }
+    .demo-card-wide.mdl-card {
+      position: relative;
+      top: 100px;
+      border-radius: 4px;
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      border-radius: 25px;
+      background: #1B9DE2;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide1.mdl-card {
+      position: relative;
+      top: 150px;
+      max-width: 1000px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide2.mdl-card {
+      position: relative;
+      top: 200px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide3.mdl-card {
+      position: relative;
+      top: 250px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide4.mdl-card {
+      position: relative;
+      top: 300px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide5.mdl-card {
+      position: relative;
+      top: 350px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      background: #1B9DE2;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide6.mdl-card {
+      position: relative;
+      top: 400px;
+      max-width: 1000px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      box-shadow:
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    .demo-card-wide90.mdl-card {
+      position: relative;
+      top: 450px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      border-radius: 25px;
+      opacity: 0;
+    }
+    .demo-card-wide1 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #1B9DE2;
+    }
+    .demo-card-wide2 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #1B9DE2;
+    }
+    .demo-card-wide3 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #1B9DE2;
+    }
+    .demo-card-wide4 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #1B9DE2;
+    }
+    .demo-card-wide5 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #1B9DE2;
+    }
+    .demo-card-wide6 > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      background: #1B9DE2;
+    }
+    .demo-card-wide > .mdl-card__title {
+      color: #fff;
+      height: 135px;
+      display: flex;
+      font-weight: bold;
+      background: #1B9DE2;
+    }
+    .demo-card-wide > .mdl-card__menu {
+      color: #fff;
+    }
+    #box{
+      opacity: 1.0;
+      height: 20%;
+      width: 100%;
+      bottom: 0px;
+    }
+    a {
+      text-decoration: none;
+      color:inherit;
+    }
+    </style>
+  </head>
+  <body>
+<a href="index.html">
+    <div id="logo">
+      <img id="image" src="intraweb.png" alt="logo">
+    </div>
+</a>
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>Installation Guide</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+  </div>
+  <div class="mdl-card__menu">
+  </div>
+</div>
+<div class="demo-card-wide1 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>Before you start:</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+<ul>
+  <li>Visit <a href="http://download.kiwix.org/zim/">Kiwix</a> and downlaod a zim. Put it into home folder as wiki.zim</li>
+  <li>You must have ethernet connected to the Pi, or wlan1. The access point will be wlan0.</li>
+  <li>You will need to enable <a href="https://nebl.io/neblio-university/enabling-increasing-raspberry-pi-swap/">swap</a> if your Pi has 1GB of RAM. This was tested on a Raspberry Pi 4 with 4GBs of RAM.</li>
+  <li><b>Recommended:</b> An external hard drive for Plex.</li>
+</ul>
+  </div>
+</div>
+<div class="demo-card-wide2 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>Step 1</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+Ensure git is installed by running <br> <code>sudo apt -y install git</code>
+  </div>
+</div>
+<div class="demo-card-wide3 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>Step 2</b></h2>
+ </div>
+  <div class="mdl-card__supporting-text">
+Clone the repository by running <br> <code>git clone https://github.com/Project-Intraweb/Intraweb.git</code>
+  </div>
+</div>
+<div class="demo-card-wide4 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>Step 3</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+Run the installation script. Run <code>cd Intraweb && sudo bash installer.sh
+</code>
+  </div>
+</div>
+<div class="demo-card-wide5 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>Volia, you are done! 🎉</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+  </div>
+</div>
+<div class="demo-card-wide6 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>Note:</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+If Google Chrome give you SSL errors, ignore it, and type to the site (not the search bar) <code>thisisunsafe</code> to bypass the warning.</div>
+</div>
+<div class="demo-card-wide90 mdl-card mdl-shadow--2dp">
+</div>
+  </body>
+</html>
